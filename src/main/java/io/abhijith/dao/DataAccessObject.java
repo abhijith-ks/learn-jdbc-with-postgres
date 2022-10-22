@@ -1,4 +1,6 @@
-package io.abhijith.utils;
+package io.abhijith.dao;
+
+import io.abhijith.dto.DataTransferObject;
 
 import java.sql.Connection;
 import java.sql.ResultSet;

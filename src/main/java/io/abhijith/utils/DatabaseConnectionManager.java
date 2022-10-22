@@ -1,4 +1,4 @@
-package io.abhijith;
+package io.abhijith.utils;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,4 +1,4 @@
-package io.abhijith;
+package io.abhijith.dto;
 
 
 import lombok.Getter;

@@ -1,7 +1,7 @@
-package io.abhijith.utils;
+package io.abhijith.dao;
 
-import io.abhijith.Order;
-import io.abhijith.OrderLine;
+import io.abhijith.dto.Order;
+import io.abhijith.dto.OrderLine;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

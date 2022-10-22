@@ -1,4 +1,4 @@
-package io.abhijith.utils;
+package io.abhijith.dto;
 
 public interface DataTransferObject {
 

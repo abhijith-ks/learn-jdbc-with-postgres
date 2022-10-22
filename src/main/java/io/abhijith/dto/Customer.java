@@ -1,6 +1,6 @@
-package io.abhijith;
+package io.abhijith.dto;
 
-import io.abhijith.utils.DataTransferObject;
+import io.abhijith.dto.DataTransferObject;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
