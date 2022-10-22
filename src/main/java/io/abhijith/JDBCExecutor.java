@@ -5,6 +5,7 @@ import io.abhijith.utils.OrderDao;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 import java.util.Properties;
 
 public class JDBCExecutor {
@@ -37,11 +38,24 @@ public class JDBCExecutor {
             dbCustomer = customerDao.update(dbCustomer);
             System.out.println(dbCustomer);
             customerDao.delete(dbCustomer.getId());
+            System.out.println();
+
+            List<Customer> customers = customerDao.findAllSorted(20);
+            for(Customer customer1 : customers) {
+                System.out.println(customer1);
+            }
+            System.out.println();
 
 //          OrderDao execution
             OrderDao orderDao = new OrderDao(connection);
             Order order = orderDao.findById(1000);
             System.out.println(order);
+            System.out.println();
+
+            List<Order> orderList = orderDao.getOrdersForCustomer(789);
+            for(Order order1: orderList) {
+                System.out.println(order1);
+            }
         }
         catch (SQLException throwables) {
             throwables.printStackTrace();
